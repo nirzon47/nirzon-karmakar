@@ -1,10 +1,11 @@
+import About from '@/components/about/About'
 import Landing from '@/components/landing/Landing'
-import LandingText from '@/components/landing/LandingText'
 
 export default function Home() {
 	return (
-		<div className='gradient-background'>
+		<div className='overflow-x-hidden gradient-background'>
 			<Landing />
+			<About />
 		</div>
 	)
 }
