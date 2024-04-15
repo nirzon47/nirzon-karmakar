@@ -9,7 +9,7 @@ import { useLayoutEffect, useState } from 'react'
 import CarouselHeading from './CarouselHeading'
 
 const SkillCarousel = ({ data }: { data: carouselType[] }) => {
-	const [vw, setVw] = useState(window.innerWidth)
+	const [vw, setVw] = useState(0)
 
 	useLayoutEffect(() => {
 		const updateViewportDimensions = () => {
