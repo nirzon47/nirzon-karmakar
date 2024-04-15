@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import './globals.css'
+import AnimatedCursor from 'react-animated-cursor'
 
 export const metadata: Metadata = {
 	title: 'Nirzon Taru Karmakar',
@@ -65,7 +66,22 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' className={`${GeistSans.variable} ${GeistMono.variable}`}>
-			<body>{children}</body>
+			<body>
+				{children}{' '}
+				<AnimatedCursor
+					innerSize={8}
+					outerSize={35}
+					innerScale={1}
+					outerScale={2}
+					outerAlpha={0}
+					innerStyle={{
+						backgroundColor: '#fff',
+					}}
+					outerStyle={{
+						border: '3px solid #fff',
+					}}
+				/>
+			</body>
 		</html>
 	)
 }

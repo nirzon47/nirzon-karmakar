@@ -40,9 +40,13 @@ const AboutCards = () => {
 	const isInView = useInView(scope)
 
 	useEffect(() => {
-		animate('.about-cards', isInView ? { opacity: 1 } : { opacity: 0 }, {
-			delay: isInView ? stagger(0.1, { startDelay: 0.1 }) : 0,
-		})
+		animate(
+			'.about-cards',
+			isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 },
+			{
+				delay: isInView ? stagger(0.1, { startDelay: 0.15 }) : 0,
+			}
+		)
 	}, [scope, animate, isInView])
 
 	return (
