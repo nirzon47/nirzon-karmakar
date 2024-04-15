@@ -19,7 +19,7 @@ const headings = [
 const About = () => {
 	return (
 		<motion.section
-			className='w-screen min-h-screen p-4 md:p-8 lg:p-16 mt-36'
+			className='w-screen min-h-screen p-4 mt-24 md:p-8 lg:p-16'
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1 }}

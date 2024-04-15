@@ -9,7 +9,13 @@ import CarouselBody from './CarouselBody'
 import 'swiper/css/autoplay'
 import 'swiper/css'
 
-const SkillCarousel = ({ data }: { data: carouselType[] }) => {
+const SkillCarousel = ({
+	data,
+	heading,
+}: {
+	data: carouselType[]
+	heading: string
+}) => {
 	const [vw, setVw] = useState(0)
 
 	useLayoutEffect(() => {
@@ -26,7 +32,7 @@ const SkillCarousel = ({ data }: { data: carouselType[] }) => {
 
 	return (
 		<div>
-			<CarouselHeading title={'Programming Languages'} />
+			<CarouselHeading title={heading} />
 			<Swiper
 				slidesPerView={vw >= 1024 ? 3 : vw >= 768 ? 2 : 1}
 				autoplay={{ delay: 3000 }}
@@ -39,8 +45,8 @@ const SkillCarousel = ({ data }: { data: carouselType[] }) => {
 							<Image
 								src={item.src}
 								alt={item.name}
-								width={100}
-								height={100}
+								width={75}
+								height={75}
 							/>
 							<CarouselBody
 								name={item.name}
