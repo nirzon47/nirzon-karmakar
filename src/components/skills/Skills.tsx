@@ -134,6 +134,58 @@ const backendAndFrameworks: carouselType[] = [
 	},
 ]
 
+const devTools: carouselType[] = [
+	{
+		id: 1,
+		name: 'Git',
+		src: '/utils/Git.svg',
+		level: 'Advanced',
+		rating: 4.5,
+	},
+	{
+		id: 2,
+		name: 'Docker',
+		src: '/utils/Docker.svg',
+		level: 'Intermediate',
+		rating: 3.5,
+	},
+	{
+		id: 3,
+		name: 'Vercel',
+		src: '/utils/Vercel.svg',
+		level: 'Proficient',
+		rating: 4,
+	},
+	{
+		id: 4,
+		name: 'Postman',
+		src: '/utils/Postman.svg',
+		level: 'Intermediate',
+		rating: 3.5,
+	},
+	{
+		id: 5,
+		name: 'Figma',
+		src: '/utils/Figma.svg',
+		level: 'Proficient',
+		rating: 4,
+	},
+	{
+		id: 6,
+		name: 'Visual Studio Code',
+		src: '/utils/Visual Studio Code (VS Code).svg',
+		level: 'Advanced',
+		rating: 5,
+	},
+	{
+		id: 7,
+		name: 'Adobe Photoshop',
+		src: '/utils/Adobe Photoshop.svg',
+		level: 'Intermediate',
+		rating: 3.5,
+	},
+]
+
 const Skills = () => {
 	const [scope, animate] = useAnimate()
 	const isInView = useInView(scope)
@@ -175,6 +227,9 @@ const Skills = () => {
 					data={backendAndFrameworks}
 					heading={'Backend & Frameworks'}
 				/>
+			</div>
+			<div className='mb-8 carousels'>
+				<SkillCarousel data={devTools} heading={'Developer Tools'} />
 			</div>
 		</motion.section>
 	)

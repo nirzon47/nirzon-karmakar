@@ -67,7 +67,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' className={`${GeistSans.variable} ${GeistMono.variable}`}>
-			<body>
+			<body className='scroll-smooth'>
 				{children}{' '}
 				<AnimatedCursor
 					innerSize={8}
