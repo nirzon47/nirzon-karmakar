@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import './globals.css'
 import AnimatedCursor from 'react-animated-cursor'
+
+import './globals.css'
 
 export const metadata: Metadata = {
 	title: 'Nirzon Taru Karmakar',

@@ -1,6 +1,6 @@
 'use client'
 
-import Heading from '../Heading'
+import Heading from '../ui/Heading'
 import { motion } from 'framer-motion'
 import AboutHeading from './AboutHeading'
 import AboutCards from './AboutCards'

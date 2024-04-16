@@ -2,7 +2,6 @@ const Rating = ({ rating }: { rating: number }) => {
 	const full = Math.floor(rating)
 	const half = rating - full
 	const empty = Math.floor(5 - rating)
-	console.log(full, empty, half)
 
 	return (
 		<div className='flex h-3 gap-1'>

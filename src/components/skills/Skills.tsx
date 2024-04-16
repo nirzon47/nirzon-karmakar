@@ -1,6 +1,6 @@
 'use client'
 
-import Heading from '../Heading'
+import Heading from '../ui/Heading'
 import { motion, stagger, useAnimate, useInView } from 'framer-motion'
 import SkillCarousel from './SkillCarousel'
 import { carouselType } from '@/lib/types'
