@@ -155,6 +155,7 @@ const Skills = () => {
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1 }}
 			ref={scope}
+			id='skills'
 		>
 			<Heading title='Skills' />
 			<div className='mb-8 carousels'>

@@ -77,9 +77,11 @@ export default function RootLayout({
 					outerAlpha={0}
 					innerStyle={{
 						backgroundColor: '#fff',
+						zIndex: '9999',
 					}}
 					outerStyle={{
 						border: '3px solid #fff',
+						zIndex: '9999',
 					}}
 				/>
 			</body>

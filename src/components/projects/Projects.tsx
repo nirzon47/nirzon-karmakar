@@ -10,6 +10,7 @@ const Projects = () => {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1 }}
+			id='projects'
 		>
 			<Heading title='Projects' />
 		</motion.section>

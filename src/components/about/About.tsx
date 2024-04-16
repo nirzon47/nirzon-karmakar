@@ -23,6 +23,7 @@ const About = () => {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1 }}
+			id='about'
 		>
 			<Heading title='About' />
 			<AboutHeading headings={headings} />
