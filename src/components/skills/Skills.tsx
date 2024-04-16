@@ -143,7 +143,7 @@ const Skills = () => {
 			'.carousels',
 			isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 },
 			{
-				delay: isInView ? stagger(0.1, { startDelay: 0.15 }) : 0,
+				delay: isInView ? stagger(0.3, { startDelay: 0.15 }) : 0,
 			}
 		)
 	}, [scope, animate, isInView])
