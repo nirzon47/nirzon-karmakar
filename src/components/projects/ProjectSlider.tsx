@@ -165,7 +165,11 @@ const Parallax = ({ data, baseVelocity = 100 }: ParallaxProps) => {
 const ParallaxItems = ({ data }: { data: any }) => {
 	return (
 		<div className='flex gap-4 items-center ring-1 ring-zinc-800 rounded-xl p-2'>
-			<a href={data.link} className='w-64 h-auto'>
+			<a
+				href={data.link}
+				className='w-64 h-auto'
+				aria-label={data.name + ' project'}
+			>
 				<Image
 					src={data.image}
 					alt={data.name}
@@ -176,10 +180,14 @@ const ParallaxItems = ({ data }: { data: any }) => {
 			</a>
 			<div className='w-48'>
 				<div className='flex flex-col gap-2'>
-					<a href={data.link} className='inline-block'>
-						<h5 className='text-sm font-medium hover:text-primary duration-150'>
+					<a
+						href={data.link}
+						className='inline-block'
+						aria-label={data.name + ' project'}
+					>
+						<h3 className='text-sm font-medium hover:text-primary duration-150'>
 							{data.name}
-						</h5>
+						</h3>
 					</a>
 					<p className='text-xs italic font-light'>{data.yap}</p>
 					<p className='text-[10px] font-thin'>{data.tech}</p>
@@ -188,6 +196,7 @@ const ParallaxItems = ({ data }: { data: any }) => {
 						className='text-xs font-light'
 						target='_blank'
 						rel='noreferrer'
+						aria-label={data.name + ' github'}
 					>
 						<IconBrandGithubFilled className='w-4 h-4 hover:text-primary duration-150' />
 					</a>
