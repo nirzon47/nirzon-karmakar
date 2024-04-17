@@ -15,6 +15,9 @@ const Projects = () => {
 			id='projects'
 		>
 			<Heading title='Projects' />
+			<p className='mt-8 text-2xl font-light opacity-65'>
+				All projects I have worked on
+			</p>
 			<MacbookScroll showGradient={false} />
 		</motion.section>
 	)
