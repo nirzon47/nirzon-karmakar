@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion'
 import Heading from '../ui/Heading'
+import { MacbookScroll } from './Macbook'
+import { useEffect, useRef } from 'react'
 
 const Projects = () => {
 	return (
@@ -13,6 +15,7 @@ const Projects = () => {
 			id='projects'
 		>
 			<Heading title='Projects' />
+			<MacbookScroll showGradient={false} />
 		</motion.section>
 	)
 }

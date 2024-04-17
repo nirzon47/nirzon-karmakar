@@ -27,6 +27,7 @@ export default function Home() {
 			<About />
 			<Skills />
 			<Projects />
+			<div className='min-h-screen mt-12 md:mt-96'>wow</div>
 		</div>
 	)
 }
