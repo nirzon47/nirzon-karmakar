@@ -1,4 +1,5 @@
 import About from '@/components/about/About'
+import { Contact } from '@/components/contact/Contact'
 import Landing from '@/components/landing/Landing'
 import Projects from '@/components/projects/Projects'
 import Skills from '@/components/skills/Skills'
@@ -27,7 +28,7 @@ export default function Home() {
 			<About />
 			<Skills />
 			<Projects />
-			<div className='min-h-screen mt-12 md:mt-96'>wow</div>
+			<Contact />
 		</div>
 	)
 }
