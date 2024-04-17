@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import Heading from '../ui/Heading'
 import { MacbookScroll } from './Macbook'
-import { useEffect, useRef } from 'react'
 
 const Projects = () => {
 	return (
