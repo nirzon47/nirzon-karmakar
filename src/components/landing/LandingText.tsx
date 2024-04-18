@@ -15,7 +15,7 @@ const LandingText = () => {
 						Building the Web.
 					</h2>
 
-					<p className='text-base leading-6 text-gray-300 md:text-xl md:w-1/2'>
+					<p className='text-base leading-6 text-gray-300 md:text-xl md:w-1/2 mb-4'>
 						I&apos;m a{' '}
 						<strong className='font-bold text-primary'>
 							web developer
@@ -24,6 +24,12 @@ const LandingText = () => {
 						experiences. Transforming ideas into reality through
 						innovative coding solutions.
 					</p>
+					<a
+						href='#contact'
+						className='text-primary text-lg opacity-75 hover:opacity-100 duration-150 w-48'
+					>
+						Want to connect?
+					</a>
 				</div>
 			</section>
 		</div>
