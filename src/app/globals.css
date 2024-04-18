@@ -53,11 +53,11 @@ body {
 
 .gradient-background {
 	background: linear-gradient(
-		300deg,
+		120deg,
 		#000000,
 		#000000,
-		#090052,
-		#090052,
+		#070038,
+		#070038,
 		#000000
 	);
 	background-size: 300% 300%;
