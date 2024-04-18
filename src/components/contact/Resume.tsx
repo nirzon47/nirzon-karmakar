@@ -17,7 +17,8 @@ const Resume = () => {
 				>
 					<motion.span
 						whileHover={{ scale: 1.03, y: -3 }}
-						className='px-4 py-2 ring-1 rounded-lg flex gap-4 items-center hover:bg-black hover:bg-opacity-25 duration-150 hover:ring-primary'
+						transition={{ duration: 0.1 }}
+						className='px-4 py-2 ring-1 rounded-lg flex gap-4 items-center hover:bg-black hover:bg-opacity-25 hover:ring-primary'
 					>
 						<BookText /> View Resume
 					</motion.span>
@@ -29,7 +30,8 @@ const Resume = () => {
 				>
 					<motion.span
 						whileHover={{ scale: 1.03, y: -3 }}
-						className='p-2 ring-1 rounded-lg flex gap-4 items-center hover:bg-black hover:bg-opacity-25 duration-150 hover:ring-primary'
+						transition={{ duration: 0.1 }}
+						className='p-2 ring-1 rounded-lg flex gap-4 items-center hover:bg-black hover:bg-opacity-25 hover:ring-primary'
 					>
 						<Download />
 					</motion.span>

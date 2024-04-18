@@ -17,7 +17,8 @@ const SocialLinks = () => {
 				>
 					<motion.span
 						whileHover={{ scale: 1.03, y: -3 }}
-						className='px-4 py-2 ring-1 rounded-lg flex gap-4 items-center w-32 hover:bg-black hover:bg-opacity-25 duration-150 hover:ring-primary'
+						transition={{ duration: 0.1 }}
+						className='px-4 py-2 ring-1 rounded-lg flex gap-4 items-center w-32 hover:bg-black hover:bg-opacity-25 hover:ring-primary'
 					>
 						<Linkedin /> LinkedIn
 					</motion.span>
@@ -29,6 +30,7 @@ const SocialLinks = () => {
 				>
 					<motion.span
 						whileHover={{ scale: 1.03, y: -3 }}
+						transition={{ duration: 0.1 }}
 						className='px-4 py-2 ring-1 rounded-lg flex gap-4 items-center w-32 hover:bg-black hover:bg-opacity-25 duration-150 hover:ring-primary'
 					>
 						<Github /> GitHub

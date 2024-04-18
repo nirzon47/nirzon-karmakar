@@ -7,7 +7,7 @@ import SocialLinks from './SocialLinks'
 export const Contact = () => {
 	return (
 		<div
-			className=' md:mt-96 w-screen min-h-screen p-4 mt-24 md:p-8 lg:p-16'
+			className=' md:mt-96 w-screen min-h-screen p-4 mt-24 md:p-8 lg:p-16 flex flex-col'
 			id='contact'
 		>
 			<Heading title={'Contact'} />
