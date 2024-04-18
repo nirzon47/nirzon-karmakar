@@ -211,18 +211,18 @@ const ProjectSlider = () => {
 		<div className='flex flex-col gap-4 justify-center'>
 			<div className='flex gap-6'>
 				{projectsTop.map((project) => (
-					<Parallax baseVelocity={10} key={project.id} data={project} />
+					<Parallax baseVelocity={7} key={project.id} data={project} />
 				))}
 				{projectsTop.map((project) => (
-					<Parallax baseVelocity={10} key={project.id} data={project} />
+					<Parallax baseVelocity={7} key={project.id} data={project} />
 				))}
 			</div>
 			<div className='flex gap-6'>
 				{projectsBottom.map((project) => (
-					<Parallax baseVelocity={-10} key={project.id} data={project} />
+					<Parallax baseVelocity={-7} key={project.id} data={project} />
 				))}
 				{projectsBottom.map((project) => (
-					<Parallax baseVelocity={-10} key={project.id} data={project} />
+					<Parallax baseVelocity={-7} key={project.id} data={project} />
 				))}
 			</div>
 		</div>
