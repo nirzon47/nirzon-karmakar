@@ -1,5 +1,3 @@
-'use client'
-
 import About from '@/components/about/About'
 import { Contact } from '@/components/contact/Contact'
 import Landing from '@/components/landing/Landing'
@@ -13,9 +11,8 @@ import {
 	Mail,
 } from 'lucide-react'
 import dynamic from 'next/dynamic'
-import { useEffect, useState } from 'react'
 const Projects = dynamic(() => import('@/components/projects/Projects'), {
-	loading: () => <div>Loading...</div>,
+	loading: () => <div></div>,
 })
 
 const navItems = [
@@ -27,15 +24,6 @@ const navItems = [
 ]
 
 export default function Home() {
-	const [isProjectLoaded, setIsProjectLoaded] = useState<boolean>(false)
-
-	useEffect(() => {
-		// Trigger the dynamic import of the Projects component
-		import('@/components/projects/Projects').then(() => {
-			setIsProjectLoaded(true)
-		})
-	}, [])
-
 	return (
 		<div className='overflow-x-hidden gradient-background'>
 			<FloatingNav navItems={navItems} />
