@@ -1,7 +1,8 @@
+'use client'
+
 import About from '@/components/about/About'
 import { Contact } from '@/components/contact/Contact'
 import Landing from '@/components/landing/Landing'
-import Projects from '@/components/projects/Projects'
 import Skills from '@/components/skills/Skills'
 import { FloatingNav } from '@/components/ui/FloatingNav'
 import {
@@ -11,15 +12,29 @@ import {
 	LibraryBig as Library,
 	Mail,
 } from 'lucide-react'
+import dynamic from 'next/dynamic'
+import { useEffect, useState } from 'react'
+const Projects = dynamic(() => import('@/components/projects/Projects'), {
+	loading: () => <div>Loading...</div>,
+})
+
+const navItems = [
+	{ name: 'Home', link: '/', icon: <HomeIcon /> },
+	{ name: 'About', link: '/#about', icon: <Info /> },
+	{ name: 'Skills', link: '/#skills', icon: <Code /> },
+	{ name: 'Projects', link: '/#projects', icon: <Library /> },
+	{ name: 'Contact', link: '/#contact', icon: <Mail /> },
+]
 
 export default function Home() {
-	const navItems = [
-		{ name: 'Home', link: '/', icon: <HomeIcon /> },
-		{ name: 'About', link: '/#about', icon: <Info /> },
-		{ name: 'Skills', link: '/#skills', icon: <Code /> },
-		{ name: 'Projects', link: '/#projects', icon: <Library /> },
-		{ name: 'Contact', link: '/#contact', icon: <Mail /> },
-	]
+	const [isProjectLoaded, setIsProjectLoaded] = useState<boolean>(false)
+
+	useEffect(() => {
+		// Trigger the dynamic import of the Projects component
+		import('@/components/projects/Projects').then(() => {
+			setIsProjectLoaded(true)
+		})
+	}, [])
 
 	return (
 		<div className='overflow-x-hidden gradient-background'>
